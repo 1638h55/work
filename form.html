@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+
+	input[type='submit']{
+		background-color:green;
+	}
+</style>
+<body>
+
+<form action="/example/html5/demo_form.asp" id="form1">
+<input type="text" list="namelist"/>
+<datalist id="namelist">
+<option label="1233" value="xiaoming"></option>
+<option label="1233" value="zhangsan"></option>
+<option label="1233" value="hhh"></option>
+</datalist>
+<label for="male" >male</label>
+<input type="radio" name="sex" id="male"/>
+<br/>
+<label for="female">female</label>
+<input type="radio" name="sex" id="female"/>
+</form>
+<input type="text" form="form1"/>
+</body>
+</html>

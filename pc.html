@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    img{
+      border: none;
+    }
+
+    html,body{
+      height: 100%;
+      width: 100%;
+
+    }
+    #root{
+      width: 100%;
+    	height: 12.5rem;
+      background:url("./images/20170518100301.png") left top no-repeat;
+      background-size: 100%;
+      position: relative;
+    }
+    #small{
+		width:1.486rem;
+		height: 0.458rem;
+      background:url("./images/20170518100247.png") left top no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left:4.25rem;
+      top:10.164rem;
+    }
+    </style>
+
+  </head>
+  <body>
+      <div id="root">
+          <div id="small"></div>
+      </div>
+  </body>
+	<script type="text/javascript">
+	function changeRem(){
+		var fontEl = document.createElement('style');
+		 var docEl=document.documentElement||document.body;
+		 var rem = docEl.clientWidth/10;
+		 docEl.firstElementChild.appendChild(fontEl);
+		 fontEl.innerHTML ='html{font-size:'+rem+'px!important}';
+	}
+	changeRem();
+	window.addEventListener("resize",changeRem,false);
+	</script>
+
+</html>
