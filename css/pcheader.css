@@ -14,33 +14,23 @@ header>div div{
 }  
 
 header>div div:nth-child(1){
-	width:148px;
+	width:351px;
 	height: 100%;
 }
+
 header>div div:nth-child(2){
-	border-left: 1px solid #b3b3b3;
-	padding-left: 15px;
-	margin-left: 15px;
-}
-header>div div:nth-child(2) span{
-	font-size: 24px;
-	color: #999;
-	font-family:franklin gothic heavy,Microsoft YaHei;
-}
-header>div div:nth-child(2) span:nth-child(1){
-	margin-right: 12px;
-}
-header>div div:nth-child(3){
-	float: right;
 	vertical-align: middle;
 	text-align: center;
 	border: 1px solid #ff5500;
 	border-radius: 6px;
 	overflow: hidden;
+	position: relative;
+	left: 60%;
+	top:10%;
 }
-header>div div:nth-child(3) a{
+header>div div:nth-child(2) a{
 	display: inline-block;
-	box-sizing: border-box;
+	line-height: 34px;
 	width: 100px;
 	height: 34px;
 	color:#ff5500;
